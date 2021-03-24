@@ -1,0 +1,256 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/*------- GENERAL STYLING -------*/
+
+html {
+    font-size: 80%;
+}
+
+body,
+input,
+button,
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+    color: #0A3D09;
+}
+
+input,
+body {
+    font-family: 'Josefin Sans';
+    line-height: 1.4;
+	font-weight: 400;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+body {
+    background-color: #fef7f7;
+    min-height: 100vh;
+    cursor: default;
+}
+
+/*------- HEADING STYLING -------*/
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    min-height: 120px;
+}
+
+.headingText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+    margin: 10px;
+    transform: scaleX(-1);
+}
+
+h1 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 3.4rem;
+    text-align: right;
+}
+
+h2 {
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 2.2rem;
+}
+
+h2,
+.heading p {
+    font-style: italic;
+    text-align: right;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.heading p {
+    font-size: 1.5rem;
+}
+
+/*------- GRID STYLING -------*/
+
+.gridFlexBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; 
+}
+
+.listColumn {
+    width: calc(793.8px / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+/*------- LIST STYLING -------*/
+
+.person {
+    margin: 15px;
+    background: #f5f5f5;
+    border: #ffd8d8 5px solid;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 10px 10px 19px -5px #d5d5d5;
+}
+
+.recipient,
+.addIdea,
+.ideas {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.recipient {
+    text-transform: uppercase;
+    color: #0A3D09;
+    background-color: transparent;
+    font-weight: 600;
+    width: 90%;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.ideas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.5rem;
+}
+
+.addIdea {
+    font-weight: 100;
+    text-transform: uppercase;
+    background-color: #ffd8d8;
+    padding: 8px 10px 5px 10px;
+    margin-top: 8px;
+}
+
+.addIdea:hover{
+    background: #fef7f7;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    padding: 5px 5px 5px 0px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+.check {
+    background: url(assets/idea.png) no-repeat;
+    background-size: 25px;
+    background-position: contain;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+.maybe {
+    background: url(assets/maybe.png) no-repeat;
+    background-size: 25px;
+    background-position: contain;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+.gifted {
+    background: url(assets/gifted.png) no-repeat;
+    background-size: 25px;
+    background-position: contain;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+/*------- FOOTER STYLING -------*/
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-style: italic;
+    justify-content: center;
+}
+
+.instructionsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#keyFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyFlexItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.keyFlexItem img {
+    display: inline-block;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 15px;
+}
+
+footer {
+    background-color: transparent;
+    margin-top: 60px;
+}
+
+#credits {
+    margin: 30px;
+}
